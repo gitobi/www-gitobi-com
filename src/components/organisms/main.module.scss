@@ -1,0 +1,9 @@
+.main {
+  margin: 0;
+}
+
+@media screen and (max-width: $breakpoints) {
+  .main {
+    margin: 0;
+  }
+}
