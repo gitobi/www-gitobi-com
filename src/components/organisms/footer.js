@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import logo from "../../images/logo.png"
-import font from "../../images/font.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 import {
   footer,
@@ -24,8 +22,18 @@ const Footer = () => {
       <div className={footerContainer}>
         <div className={footerLogo}>
           <Link to="/">
-            <img className={siteLogo} src={logo} alt="Gitobi logo" />
-            <img className={siteFont} src={font} alt="Gitobi" />
+            <StaticImage
+              className={siteLogo}
+              src="../../images/logo.png"
+              alt="Gitobi logo"
+              placeholder="blurred"
+            />
+            <StaticImage
+              className={siteFont}
+              src="../../images/font.png"
+              alt="Gitobi"
+              placeholder="blurred"
+            />
           </Link>
         </div>
         <nav className={nav}>
