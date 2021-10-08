@@ -65,7 +65,7 @@ const IndexPage = () => {
           <div className={sectionContainer}>
             <div className={sectionLeft}>
               <p>日本のフルーツ栽培のコストを下げ、効率化を支援する「フルーツ工場」事業を展開。日当たりや水分量などの環境を計測・制御するIoTデバイス「Gitobi Cosmo Devices」の開発と提供、それらのデバイスを使ったオンライン栽培管理システム「からくりファーム」の提供を行っています。</p>
-              <Link className={sectionLink} to="/">製品とサービスを見る</Link>
+              <Link className={sectionLink} to="/services">製品とサービスを見る</Link>
             </div>
             <div className={sectionRight}>
               <StaticImage
