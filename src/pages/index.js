@@ -47,7 +47,7 @@ const IndexPage = () => {
               <p>梨や桃をはじめとする日本の美味しいフルーツ。</p>
               <p>しかし、それら日本のフルーツは、育成期間の長さや病害、食害のリスクを含めた生産コストが高く、また、四季の影響で年に一度しか収穫できない現状があります。</p>
               <p>Gitobiは、自然環境や職人の感覚をITの力で計測し、データとして活用可能にすることで、誰もが手軽にフルーツ栽培を始められる、続けられる未来を創ります。そして、日本のフルーツが、世界中の人々に愛される未来を目指します。</p>
-              <Link className={sectionLink} to="/">Gitobi について</Link>
+              <Link className={sectionLink} to="/about">Gitobi について</Link>
             </div>
             <div className={sectionRight}>
               <StaticImage

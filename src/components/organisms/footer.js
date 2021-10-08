@@ -39,7 +39,7 @@ const Footer = () => {
         <nav className={nav}>
           <ul>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="/">
+              <Link className={footerNavItemLink} to="/about">
                 ABOUT
               </Link>
             </li>
@@ -54,7 +54,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="/">
+              <Link className={footerNavItemLink} to="https://goo.gl/forms/UwYGr6VurI">
                 CONTACT
               </Link>
             </li>

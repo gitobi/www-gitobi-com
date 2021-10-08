@@ -37,7 +37,7 @@ const Header = () => {
         <nav className={nav}>
           <ul className={headerNav}>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="/">
+              <Link className={headerNavItemLink} to="/about">
                 ABOUT
               </Link>
             </li>
@@ -52,7 +52,7 @@ const Header = () => {
               </Link>
             </li>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="/">
+              <Link className={headerNavItemLink} to="https://goo.gl/forms/UwYGr6VurI">
                 CONTACT
               </Link>
             </li>

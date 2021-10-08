@@ -1,0 +1,68 @@
+.article {
+  max-width: $breakpoints;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 3rem 0 1rem 0;
+}
+
+.section-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-left {
+  flex: 1;
+}
+
+.section-right {
+  flex: 2;
+}
+
+.section-header {
+  margin-top: 0;
+}
+
+.section-img {
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.member-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.member-left {
+  flex: 1;
+}
+
+.member-img {
+  border-radius: 50%;
+}
+
+.member-right {
+  flex: 2;
+}
+
+.member-name {
+  margin: .5rem 0 0 0;
+}
+
+@media screen and (max-width: $breakpoints) {
+  .article {
+    margin: 0 .5rem;
+  }
+
+  .section-container {
+    gap: .5rem;
+    flex-flow: column;
+  }
+
+  .member-container {
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+}
