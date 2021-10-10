@@ -16,6 +16,7 @@ const TopicsList = ({ className, posts }) => {
       {posts.map(post => {
         return (
           <TopicListItem
+            key={post.fields.slug}
             className={li}
             path={post.fields.slug}
             title={post.frontmatter.title}
