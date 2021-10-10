@@ -18,4 +18,4 @@ featuredImage:
 
 是非お越しください！
 
-[プレゼンテーション資料](/assets/pdf/presentations/2018/20181120_fruits_plant.pdf) をダウンロードできます。
+[プレゼンテーション資料](20181120_fruits_plant.pdf) をダウンロードできます。
