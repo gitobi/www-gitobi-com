@@ -16,7 +16,6 @@ import {
 const TopicPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = data
 
   return (
     <BaseLayout location={location} title={siteTitle}>
