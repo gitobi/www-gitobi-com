@@ -4,8 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import BaseLayout from "../components/templates/base-layout"
 
-import member from "../images/pages/about/member.jpg"
-
 import {
   article,
   section,

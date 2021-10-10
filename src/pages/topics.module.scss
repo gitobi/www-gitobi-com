@@ -1,0 +1,24 @@
+.article {
+  max-width: $breakpoints;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 3rem 0 1rem 0;
+}
+
+.section-container {
+  display: flex;
+  gap: 1rem;
+  flex-flow: column;
+}
+
+@media screen and (max-width: $breakpoints) {
+  .article {
+    margin: 0 .5rem;
+  }
+
+  .section-container {
+    gap: .5rem;
+  }
+}

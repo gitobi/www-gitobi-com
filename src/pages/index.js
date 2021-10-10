@@ -87,7 +87,7 @@ const IndexPage = () => {
               <p>Topic</p>
             </div>
           </div>
-          <Link className={sectionLink} to="/">最新のニュースを見る</Link>
+          <Link className={sectionLink} to="/topics">最新のニュースを見る</Link>
         </section>
 
         <section className={section}>
