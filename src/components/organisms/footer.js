@@ -26,13 +26,13 @@ const Footer = () => {
               className={siteLogo}
               src="../../images/logo.png"
               alt="Gitobi logo"
-              placeholder="blurred"
+              placeholder="none"
             />
             <StaticImage
               className={siteFont}
               src="../../images/font.png"
               alt="Gitobi"
-              placeholder="blurred"
+              placeholder="none"
             />
           </Link>
         </div>

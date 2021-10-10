@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
           className={mainVisualImg}
           src="../images/pages/index/main-visual.jpg"
           alt="Main visual"
-          placeholder="blurred"
+          placeholder="none"
           objectPosition="80% 100%"
         />
         <p className={mainText}>
@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
                 imgClassName={sectionImg}
                 src="../images/pages/index/about-eyecatch.jpg"
                 alt="About eyecatch"
-                placeholder="blurred"
+                placeholder="dominantColor"
               />
             </div>
           </div>
@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
                 imgClassName={sectionImg}
                 src="../images/pages/index/services-eyecatch.jpg"
                 alt="Services eyecatch"
-                placeholder="blurred"
+                placeholder="dominantColor"
               />
             </div>
           </div>

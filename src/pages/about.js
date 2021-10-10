@@ -37,7 +37,7 @@ const AboutPage = () => {
                 imgClassName={sectionImg}
                 src="../images/pages/about/about-eyecatch.jpg"
                 alt="About eyecatch"
-                placeholder="blurred"
+                placeholder="dominantColor"
               />
             </div>
           </div>
@@ -85,7 +85,7 @@ const AboutPage = () => {
                 imgClassName={sectionImg}
                 src="../images/pages/about/story-eyecatch.jpg"
                 alt="Story eyecatch"
-                placeholder="blurred"
+                placeholder="dominantColor"
               />
               <p>エンジニアリング企業であるGitobiが、事業の軸足を「農業」に置くことに決めたのは、2016年のこと。</p>
               <p>きっかけは、創業者の小野寺が何気なく手にした一冊の本でした。そこに書かれていたのは、日本の農業の構造と、その継続発展の妨げとなる課題の数々。これまでさまざまなITサービスを生み出してきたGitobiなら、それらの課題を解決できるかもしれない——。可能性を探るため、農業の勉強を始めた小野寺は、そこで、日本のフルーツ栽培の難しさに直面します。</p>
@@ -109,7 +109,7 @@ const AboutPage = () => {
                     imgClassName={memberImg}
                     src="../images/pages/about/rui-onodera.jpg"
                     alt="Rui Onodera"
-                    placeholder="blurred"
+                    placeholder="dominantColor"
                   />
                 </div>
                 <div className={memberRight}>
@@ -166,7 +166,7 @@ const AboutPage = () => {
                     imgClassName={memberImg}
                     src="../images/pages/about/takuro-onoda.jpg"
                     alt="Takuro Onoda"
-                    placeholder="blurred"
+                    placeholder="dominantColor"
                   />
                 </div>
                 <div className={memberRight}>
