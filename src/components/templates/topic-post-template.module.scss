@@ -1,0 +1,38 @@
+.article {
+  max-width: $breakpoints;
+  margin: 0 auto;
+}
+
+.img-wrapper {
+  width: 100%;
+  max-height: 400px;
+}
+
+.img {
+  border-radius: .5rem;
+}
+
+.a {
+  border-bottom: 1px solid $color-primary-text;
+
+  &:link, &:visited, &:hover, &:active, &:focus {
+    color: $color-primary-text;
+    text-decoration: none;
+  }
+
+  &:hover {
+    font-weight: bold;
+    border-bottom: 2px solid $color-primary-text;
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: $breakpoints) {
+  .article {
+    margin: 0 .5rem;
+  }
+}

@@ -1,0 +1,39 @@
+.li {
+  list-style: none;
+}
+
+.a {
+  &:link, &:visited, &:hover, &:active, &:focus, &:hover {
+    color: $color-primary-text;
+    text-decoration: none;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-item {
+  flex: 1;
+}
+
+.featured-image {
+  border-radius: .5rem;
+}
+
+.right-item {
+  flex: 4;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: $breakpoints) {
+  .container {
+    gap: .5rem;
+    flex-flow: column;
+  }
+}

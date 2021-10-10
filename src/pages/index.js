@@ -1,8 +1,10 @@
 import React from "react"
 
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+
 import BaseLayout from "../components/templates/base-layout"
+import TopicsList from "../components/organisms/lists/topics-list"
 
 import {
   mainVisual,
@@ -16,10 +18,11 @@ import {
   sectionRight,
   sectionImg,
   sectionLink,
-  topic,
 } from "./index.module.scss"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.nodes
+
   return (
     <BaseLayout>
       <section className={mainVisual}>
@@ -82,10 +85,9 @@ const IndexPage = () => {
           <h1 className={sectionHeader}>TOPICS</h1>
           <p>Gitobiのコーポレートニュース、メディア掲載情報などを発信しています。</p>
           <div className={sectionContainer}>
-            <div className={topic}>
-              <h2>Topic</h2>
-              <p>Topic</p>
-            </div>
+            <TopicsList
+              posts={posts}
+            />
           </div>
           <Link className={sectionLink} to="/topics">最新のニュースを見る</Link>
         </section>
@@ -108,3 +110,29 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "YYYY年M月D日")
+          title
+          description
+          category
+          featuredImage {
+            src {
+              childImageSharp {
+                gatsbyImageData(width: 640, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+        }
+      }
+    }
+  }
+`

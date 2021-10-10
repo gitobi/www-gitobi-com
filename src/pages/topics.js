@@ -1,6 +1,8 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import BaseLayout from "../components/templates/base-layout"
+import TopicsList from "../components/organisms/lists/topics-list"
 
 import {
   article,
@@ -8,7 +10,9 @@ import {
   sectionContainer,
 } from "./topics.module.scss"
 
-const TopicsPage = () => {
+const TopicsPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.nodes
+
   return (
     <BaseLayout>
       <article className={article}>
@@ -17,14 +21,9 @@ const TopicsPage = () => {
           <p>Gitobiのコーポレートニュース、メディア掲載情報などを発信しています。</p>
         </section>
         <section className={sectionContainer}>
-          <div>
-            <h2>Topic</h2>
-            <p>Header</p>
-          </div>
-          <div>
-            <h2>Topic</h2>
-            <p>Header</p>
-          </div>
+          <TopicsList
+            posts={posts}
+          />
         </section>
       </article>
     </BaseLayout>
@@ -32,3 +31,29 @@ const TopicsPage = () => {
 }
 
 export default TopicsPage
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "YYYY年M月D日")
+          title
+          description
+          category
+          featuredImage {
+            src {
+              childImageSharp {
+                gatsbyImageData(width: 640, layout: CONSTRAINED)
+              }
+            }
+            alt
+          }
+        }
+      }
+    }
+  }
+`
