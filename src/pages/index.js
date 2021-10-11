@@ -3,6 +3,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Seo from "../components/molecules/seo"
 import BaseLayout from "../components/templates/base-layout"
 import TopicsList from "../components/organisms/lists/topics-list"
 
@@ -25,6 +26,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <BaseLayout>
+      <Seo />
       <section className={mainVisual}>
         <StaticImage
           className={mainVisualImg}

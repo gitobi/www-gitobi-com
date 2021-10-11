@@ -2,6 +2,7 @@ import React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 
+import Seo from "../components/molecules/seo"
 import BaseLayout from "../components/templates/base-layout"
 
 import {
@@ -17,6 +18,10 @@ import {
 const ServicesPage = () => {
   return (
     <BaseLayout>
+      <Seo
+        title="SERVICES"
+        description="Gitobiの事業や、提供している製品とサービス、自社農園の Pilot Farm by Gitobi、そしてフルーツ工場産のブランドフルーツ Maiko を紹介します。"
+      />
       <article className={article}>
 
         <section className={section}>

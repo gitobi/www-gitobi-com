@@ -2,6 +2,7 @@ import React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 
+import Seo from "../components/molecules/seo"
 import BaseLayout from "../components/templates/base-layout"
 
 import member from "../images/pages/about/member.jpg"
@@ -24,13 +25,17 @@ import {
 const AboutPage = () => {
   return (
     <BaseLayout>
+      <Seo
+        title="ABOUT"
+        description="Gitobiが目指していることや、これまでの歩みのほか、社員、会社概要などを紹介します。"
+      />
       <article className={article}>
 
         <section className={section}>
           <div className={sectionContainer}>
             <div className={sectionLeft}>
               <h1 className={sectionHeader}>ABOUT</h1>
-              <p>Gitobiが目指していることや、これまでの歩みのほか、社員、会社概要などを自己紹介します。</p>
+              <p>Gitobiが目指していることや、これまでの歩みのほか、社員、会社概要などを紹介します。</p>
             </div>
             <div className={sectionRight}>
               <StaticImage

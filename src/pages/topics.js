@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Seo from "../components/molecules/seo"
 import BaseLayout from "../components/templates/base-layout"
 import TopicsList from "../components/organisms/lists/topics-list"
 
@@ -15,6 +16,10 @@ const TopicsPage = ({ data }) => {
 
   return (
     <BaseLayout>
+      <Seo
+        title="TOPICS"
+        description="Gitobiの最新ニュースを紹介します。"
+      />
       <article className={article}>
         <section className={section}>
           <h1>TOPICS</h1>

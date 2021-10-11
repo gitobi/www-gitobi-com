@@ -2,8 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+import Seo from "../molecules/seo"
 import BaseLayout from "./base-layout.js"
-import Seo from "../seo"
 
 import {
   article,
@@ -22,6 +22,7 @@ const TopicPostTemplate = ({ data, location }) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        type="article"
       />
       <article
         className={article}
