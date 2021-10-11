@@ -14,9 +14,9 @@ import "./base-layout.scss"
 const BaseLayout = ({ children }) => {
   return (
     <>
-      <Helmet>
-        <html lang="ja" />
-      </Helmet>
+      <Helmet
+        htmlAttributes={{ lang: "ja" }}
+      />
       <Header />
       <Main children={children} />
       <Footer />
