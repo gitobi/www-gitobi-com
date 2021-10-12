@@ -23,7 +23,7 @@ const Seo = ({ title, description, imagePath, isArticle }) => {
   const pageTitle = title ? title + ' | ' + site.siteMetadata.title : site.siteMetadata.title
   const pageDescription = description || site.siteMetadata.description
 
-  const ogImage = imagePath ? imagePath : '/logo.png'
+  const ogImageUrl = imagePath ? `${site.siteMetadata.siteUrl}${imagePath}` : `${site.siteMetadata.siteUrl}/logo.png`
   const ogType = isArticle ? 'article' : 'website'
   const twitterCard = isArticle ? 'summary_large_image' : 'summary'
 
@@ -48,7 +48,7 @@ const Seo = ({ title, description, imagePath, isArticle }) => {
         },
         {
           property: `og:image`,
-          content: ogImage,
+          content: ogImageUrl,
         },
         {
           property: `og:type`,
