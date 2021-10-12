@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    description: `根域制限栽培とITを活用した果樹のスマート農業、フルーツ工場事業を行っています。フルーツ工場で収穫したフルーツは Maiko ブランドで展開。また根域制限栽培に最適なスマートかん水装置、栽培システム、栽培資材を提供しています。`,
+    description: `根域制限栽培とITを活用した果樹のスマート農業、フルーツ工場事業をGitobi合同会社は行っています。`,
     siteUrl: `https://www.gitobi.com`,
     title: `根域制限栽培とスマート農業のGitobi`,
   },
