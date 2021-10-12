@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 
 import Seo from "../molecules/seo"
 import BaseLayout from "./base-layout.js"
@@ -22,7 +22,8 @@ const TopicPostTemplate = ({ data, location }) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        type="article"
+        imagePath={getSrc(post.frontmatter.featuredImage.src)}
+        isArticle={true}
       />
       <article
         className={article}
@@ -49,7 +50,7 @@ const TopicPostTemplate = ({ data, location }) => {
         >
           <Link
             className={a}
-            to="/topics"
+            to="/topics/"
           >
             Topics に戻る
           </Link>

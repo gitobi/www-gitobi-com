@@ -39,38 +39,38 @@ const Footer = () => {
         <nav className={nav}>
           <ul>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="/about">
+              <Link className={footerNavItemLink} to="/about/">
                 ABOUT
               </Link>
             </li>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="/services">
+              <Link className={footerNavItemLink} to="/services/">
                 SERVICES
               </Link>
             </li>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="/topics">
+              <Link className={footerNavItemLink} to="/topics/">
                 TOPICS
               </Link>
             </li>
             <li className={footerNavItem}>
-              <Link className={footerNavItemLink} to="https://goo.gl/forms/UwYGr6VurI">
+              <a
+                className={footerNavItemLink}
+                href="https://goo.gl/forms/UwYGr6VurI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 CONTACT
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
       <p className={footerCopyRight}>
         &copy; 2020&nbsp;
-        <a
-          className={footerCopyRightLink}
-          href="https://www.gitobi.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gitobi LLC.
-        </a>
+        <Link className={footerCopyRightLink} to="/">
+        Gitobi LLC.
+      </Link>
       </p>
     </footer>
   )

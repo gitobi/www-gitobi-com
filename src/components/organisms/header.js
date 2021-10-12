@@ -37,24 +37,29 @@ const Header = () => {
         <nav className={nav}>
           <ul className={headerNav}>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="/about">
+              <Link className={headerNavItemLink} to="/about/">
                 ABOUT
               </Link>
             </li>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="/services">
+              <Link className={headerNavItemLink} to="/services/">
                 SERVICES
               </Link>
             </li>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="/topics">
+              <Link className={headerNavItemLink} to="/topics/">
                 TOPICS
               </Link>
             </li>
             <li className={headerNavItem}>
-              <Link className={headerNavItemLink} to="https://goo.gl/forms/UwYGr6VurI">
+              <a
+                className={headerNavItemLink}
+                href="https://goo.gl/forms/UwYGr6VurI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 CONTACT
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

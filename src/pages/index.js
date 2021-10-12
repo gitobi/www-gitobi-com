@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
               <p>梨や桃をはじめとする日本の美味しいフルーツ。</p>
               <p>しかし、それら日本のフルーツは、育成期間の長さや病害、食害のリスクを含めた生産コストが高く、また、四季の影響で年に一度しか収穫できない現状があります。</p>
               <p>Gitobiは、自然環境や職人の感覚をITの力で計測し、データとして活用可能にすることで、誰もが手軽にフルーツ栽培を始められる、続けられる未来を創ります。そして、日本のフルーツが、世界中の人々に愛される未来を目指します。</p>
-              <Link className={sectionLink} to="/about">Gitobi について</Link>
+              <Link className={sectionLink} to="/about/">Gitobi について</Link>
             </div>
             <div className={sectionRight}>
               <StaticImage
@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
           <div className={sectionContainer}>
             <div className={sectionLeft}>
               <p>日本のフルーツ栽培のコストを下げ、効率化を支援する「フルーツ工場」事業を展開。日当たりや水分量などの環境を計測・制御するIoTデバイス「Gitobi Cosmo Devices」の開発と提供、それらのデバイスを使ったオンライン栽培管理システム「からくりファーム」の提供を行っています。</p>
-              <Link className={sectionLink} to="/services">製品とサービスを見る</Link>
+              <Link className={sectionLink} to="/services/">製品とサービスを見る</Link>
             </div>
             <div className={sectionRight}>
               <StaticImage
@@ -91,19 +91,33 @@ const IndexPage = ({ data }) => {
               posts={posts}
             />
           </div>
-          <Link className={sectionLink} to="/topics">最新のニュースを見る</Link>
+          <Link className={sectionLink} to="/topics/">最新のニュースを見る</Link>
         </section>
 
         <section className={section}>
           <h1 className={sectionHeader}>CONTACT</h1>
           <p>サービス利用についてや、協業のご相談、農地情報のご提供、採用についてなど、お問い合わせはこちらからお願いします。（Googleフォームが開きます）</p>
-          <Link className={sectionLink} to="https://goo.gl/forms/UwYGr6VurI">問い合わせフォームへ</Link>
+          <a
+            className={sectionLink}
+            href="https://goo.gl/forms/UwYGr6VurI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            問い合わせフォームへ
+          </a>
         </section>
 
         <section className={section}>
           <h1 className={sectionHeader}>MAIL MAGAZINE</h1>
           <p>サイトの更新情報やGitobiの活動に関するメールマガジンを、不定期にお届けいたします。購読を希望される方はこちらのからお願いします。（Hubspotフォームが開きます）</p>
-          <Link className={sectionLink} to="https://share.hsforms.com/1Bfj7ONcPRBK9bkAeEj3ySw2cwg3">購読申し込みフォームへ</Link>
+          <a
+            className={sectionLink}
+            href="https://share.hsforms.com/1Bfj7ONcPRBK9bkAeEj3ySw2cwg3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            購読申し込みフォームへ
+          </a>
         </section>
 
       </article>
